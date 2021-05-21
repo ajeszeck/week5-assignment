@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  a {
+    text-decoration: none;
+    color: #FF0000;
+  }
+}
