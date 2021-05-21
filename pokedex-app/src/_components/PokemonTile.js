@@ -5,10 +5,10 @@ import '../_stylesheets/PokemonTile.scss'
 
 export default class Pokemon extends Component {
   render() {
-    const { name } = this.props;
+    const { name, id } = this.props;
     return (
       <div className="pokemon-tile">
-        <Link to={`/pokemon/${this.props.id}`} >
+        <Link to={`/pokemon/${id}`} >
           <p>{name}</p>
         </Link>
       </div>
@@ -17,5 +17,6 @@ export default class Pokemon extends Component {
 }
 
 Pokemon.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired
 }

@@ -30,7 +30,7 @@ export default class HomePage extends Component {
     const pokemon = this.state.pokemon.map(pokemon => {
       const id = pokemon.url.split("/")[6]
       return (
-          <PokemonTile name={pokemon.name} key={id} url={pokemon.url} id={id} />
+          <PokemonTile name={pokemon.name} key={id} id={id} />
       )
     })
     return (
